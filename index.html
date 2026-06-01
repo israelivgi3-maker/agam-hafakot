@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ישראל איבגי - אגם הפקות</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #070708;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header-section {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://unsplash.com') no-repeat center center/cover;
+            padding: 60px 20px;
+            border-bottom: 4px solid #ffd700;
+        }
+        .logo-box {
+            border: 3px solid #ffd700;
+            padding: 15px 40px;
+            background-color: #000000;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        .logo-box h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #ffffff;
+            font-weight: 900;
+        }
+        .logo-box div {
+            font-size: 1.8rem;
+            color: #ffd700;
+            letter-spacing: 6px;
+            font-weight: bold;
+        }
+        p.intro {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 20px auto;
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .contact-card {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid #ffd700;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .contact-card a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #121214;
+            border: 1px solid #222;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .card h3 {
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        .video-box {
+            max-width: 800px;
+            margin: 40px auto;
+            border: 2px solid #222;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+        .video-box iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+        }
+        .social-section {
+            background-color: #0b0b0d;
+            padding: 50px 20px;
+            border-top: 1px solid #1a1a1f;
+        }
+        .social-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 1.1rem;
+        }
+        .youtube { background-color: #ff0000; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366); }
+        .facebook { background-color: #1877f2; }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            padding: 15px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- כפתור וואטסאפ צף תמיד על המסך למטה -->
+    <a href="https://wa.me" class="whatsapp-float" target="_blank">
+        💬 דברו עם מורן בוואטסאפ
+    </a>
+
+    <div class="header-section">
+        <div class="logo-box">
+            <h1>ישראל איבגי</h1>
+            <div>אגם הפקות</div>
+        </div>
+        <p class="intro">הופכים כל אירוע לחוויה בלתי נשכחת. הפקה וניהול של אירועים פרטיים, אירועים עסקיים והופעות ענק בסטנדרטים הבינלאומיים הגבוהים ביותר.</p>
+        <div class="contact-card">
+            <span style="color: #ffd700; display:block; font-size:0.9rem;">לסגירת אירועים מול מורן:</span>
+            <a href="tel:0529453046">📞 052-9453046</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">השירותים שלנו</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>🎤 הופעות ואירועי ענק</h3>
+                <p>הפקות שטח מורכבות, ניהול במות ואומנים, מערכות תאורה והגברה מתקדמות וחווית קצה עוצמתית.</p>
+            </div>
+            <div class="card">
+                <h3>💼 אירועים עסקיים</h3>
+                <p>ערבי חברה, כנסים מקצועיים, ימי גיבוש והשקות מותג עם דגש על מיתוג מדויק ועמידה בזמנים.</p>
+            </div>
+            <div class="card">
+                <h3>✨ אירועים פרטיים</h3>
+                <p>חתונות יוקרה, בר/בת מצווה ואירועים משפחתיים ייחודיים מלאי רגש ואנרגיה שמקפיצה את הרחבה.</p>
+            </div>
+        </div>
+
+        <h2 style="font-size: 2.5rem; margin-top: 60px; margin-bottom: 10px;">אגם הפקות בפעולה</h2>
+        <div class="video-box">
+            <iframe src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="social-section">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">עקבו אחרינו במדיה הדיגיטלית</h2>
+        <a href="https://youtube.com" target="_blank" class="social-btn youtube">ערוץ ה-YouTube</a>
+        <a href="https://instagram.com" target="_blank" class="social-btn instagram">עמוד ה-Instagram</a>
+        <a href="https://facebook.com" target="_blank" class="social-btn facebook">פרופיל ה-Facebook</a>
+    </div>
+
+    <footer style="padding: 20px; background-color: #000; color: #555;">
+        <p>© 2026 ישראל איבגי - אגם הפקות. כל הזכויות שמורות למורן וצוות ההפקה.</p>
+    </footer>
+
+</body>
+</html>
