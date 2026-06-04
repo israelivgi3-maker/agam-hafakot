@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>אגם הפקות | ישראל איבגי</title>
-   <meta name="google-site-verification" content="JhRocPHHgm1WQAjWX-zK5BqDPAgD32td1FkMNxmpBeE" />
+    <title>אגם הפקות | ישראל איבגי</title>
+    <meta name="google-site-verification" content="JhRocPHHgm1WQAjWX-zK5BqDPAgD32td1FkMNxmpBeE" />
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -15,7 +15,7 @@
             text-align: center;
         }
         .header-section {
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://unsplash.com') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1470') no-repeat center center/cover;
             padding: 60px 20px;
             border-bottom: 4px solid #ffd700;
         }
@@ -70,27 +70,67 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
             margin-top: 30px;
+            margin-bottom: 50px;
         }
         .card {
             background-color: #121214;
             border: 1px solid #222;
             border-radius: 15px;
             padding: 30px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
         }
         .card h3 {
             color: #ffd700;
             font-size: 1.8rem;
             margin-top: 0;
         }
+        
+        /* עיצוב נכון ורספונסיבי לסרטון */
         .video-box {
             max-width: 800px;
             margin: 40px auto;
-            border: 2px solid #222;
-            border-radius: 10px;
+            border: 2px solid #ffd700;
+            border-radius: 15px;
             overflow: hidden;
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+        }
+        .video-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* אזור ביוגרפיה בסגנון ויקיפדיה */
+        .about-section {
+            background-color: #121214;
+            border: 1px solid #222;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            text-align: right;
+        }
+        .about-section h2 {
+            color: #ffd700;
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            color: #ddd;
+            line-height: 1.8;
         }
         
         .social-section {
@@ -107,10 +147,15 @@
             font-weight: bold;
             margin: 10px;
             font-size: 1.1rem;
+            transition: opacity 0.2s;
+        }
+        .social-btn:hover {
+            opacity: 0.8;
         }
         .youtube { background-color: #ff0000; }
         .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366); }
         .facebook { background-color: #1877f2; }
+        .tiktok { background-color: #010101; border: 1px solid #333; }
         
         .whatsapp-float {
             position: fixed;
@@ -130,7 +175,7 @@
 <body>
 
     <!-- כפתור וואטסאפ צף תמיד על המסך למטה -->
-   <a href="https://wa.me/972529453046?text=שלום%20מורן,%20אשמח%20לקבל%20פרטים%20נוספים%20לגבי%20הפקת%20אירוע" target="_blank" class="whatsapp-float">דברו עם מורן בוואטסאפ</a>
+    <a href="https://wa.me/972529453046?text=שלום%20מורן,%20אשמח%20לקבל%20פרטים%20נוספים%20לגבי%20הפקת%20אירוע" target="_blank" class="whatsapp-float">דברו עם מורן בוואטסאפ</a>
 
     <div class="header-section">
         <div class="logo-box">
@@ -143,12 +188,16 @@
             <a href="tel:0529453046">📞 052-9453046</a>
         </div>
     </div>
-<!-- אזור סרטון תדמית והופעה -->
-<div class="video-box">
-    <iframe src="https://www.youtube.com/embed/KA5fUSBKILA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
     <div class="container">
-        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">השירותים שלנו</h2>
+        
+        <!-- אזור סרטון תדמית והופעה מרכזי ותקין -->
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">צפו בהופעה חיה</h2>
+        <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/KA5fUSBKILA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h2 style="font-size: 2.5rem; margin-top: 50px; margin-bottom: 10px;">השירותים שלנו</h2>
         <div class="services-grid">
             <div class="card">
                 <h3>🎤 הופעות ואירועי ענק</h3>
@@ -164,23 +213,31 @@
             </div>
         </div>
 
-       
-     <!-- אזור סרטון תדמית והופעה -->
-<div class="video-box">
-    <iframe src="https://www.youtube.com/embed/KA5fUSBKILA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+        <!-- אזור פרופיל אומן / ויקיפדיה אישי -->
+        <div class="about-section">
+            <h2>תעודת זהות מקצועית</h2>
+            <p>
+                <strong>ישראל איבגי</strong> הוא מוזיקאי, זמר מבצע, מפיק ומנהל מוזיקלי בעל ניסיון רב שנים בתעשיית הבידור והאירועים בישראל. הוא משמש כבעלים והמנהל הכללי של חברת <strong>"אגם הפקות"</strong>, המובילה פרויקטים מוזיקליים מורכבים, אירועי חברה והפקות ענק ברחבי הארץ.
+            </p>
+            <p>
+                החברה חרטה על דגלה שילוב מנצח בין שמירה קפדנית על הדיוק והמלודיות המקוריות של נכסי צאן ברזל מוזיקליים, לבין מעטפת הפקה מודרנית, חדשנית ועוצמתית ברמה הטכנולוגית הגבוהה ביותר. עם רזומה עשיר של הופעות על הבמות הגדולות ביותר (ביניהן תיאטרון גבעתיים ועוד), "אגם הפקות" מספקת מענה אומנותי וניהולי שלם מאל"ף ועד תי"ו.
+            </p>
+        </div>
 
-<!-- אזור רשתות חברתיות -->
-<div class="social-section">
-    <h2 style="font-family: inherit; color: #fff; margin-bottom: 20px;">עקבו אחרינו במדיה הדיגיטלית</h2>
-    <a href="https://youtube.com/@israel_ivgi2" target="_blank" class="social-btn youtube">YouTube</a>
-    <a href="https://www.instagram.com/israelivgi_?igsh=MWlpbGIwbWFxZnVlaA==" target="_blank" class="social-btn instagram">Instagram</a>
-    <a href="https://www.facebook.com/profile.php?id=100013690294664&mibextid=ZbWKwL" target="_blank" class="social-btn facebook">Facebook</a>
-    <a href="https://www.tiktok.com/@israelivgi3?_r=1&_t=ZS-91GJUayYYsy" target="_blank" class="social-btn tiktok">TikTok</a>
-</div>
+    </div>
+
+    <!-- אזור רשתות חברתיות -->
+    <div class="social-section">
+        <h2 style="font-family: inherit; color: #fff; margin-bottom: 20px;">עקבו אחרינו במדיה הדיגיטלית</h2>
+        <a href="https://youtube.com/@israel_ivgi2" target="_blank" class="social-btn youtube">YouTube</a>
+        <a href="https://www.instagram.com/israelivgi_?igsh=MWlpbGIwbWFxZnVlaA==" target="_blank" class="social-btn instagram">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100013690294664&mibextid=ZbWKwL" target="_blank" class="social-btn facebook">Facebook</a>
+        <a href="https://www.tiktok.com/@israelivgi3?_r=1&_t=ZS-91GJUayYYsy" target="_blank" class="social-btn tiktok">TikTok</a>
+    </div>
+
     <footer style="padding: 20px; background-color: #000; color: #555;">
-        <p>© 2026 ישראל איבגי - אגם הפקות. כל הזכויות שמורות .</p>
+        <p>© 2026 ישראל איבגי - אגם הפקות. כל הזכויות שמורות.</p>
     </footer>
 
 </body>
-</html> 
+</html>
