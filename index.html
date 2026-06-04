@@ -132,6 +132,75 @@
             color: #ddd;
             line-height: 1.8;
         }
+
+        /* אזור תגובות והמלצות חדש בסגנון שביקשת */
+        .reviews-section {
+            margin: 60px auto;
+            max-width: 900px;
+        }
+        .reviews-heading {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .reviews-stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .review-card {
+            background-color: #121214;
+            border: 1px solid #ffd700;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: right;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+        }
+        .reviewer-name {
+            font-weight: bold;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+        .review-stars-individual {
+            color: #ffd700;
+            font-size: 0.9rem;
+        }
+        .review-text {
+            color: #eee;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .add-review-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: #ffd700;
+            border: 2px solid #ffd700;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: 15px;
+        }
+        .add-review-btn:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
         
         .social-section {
             background-color: #0b0b0d;
@@ -220,8 +289,46 @@
                 <strong>ישראל איבגי</strong> הוא מוזיקאי, זמר מבצע, מפיק ומנהל מוזיקלי בעל ניסיון רב שנים בתעשיית הבידור והאירועים בישראל. הוא משמש כבעלים והמנהל הכללי של חברת <strong>"אגם הפקות"</strong>, המובילה פרויקטים מוזיקליים מורכבים, אירועי חברה והפקות ענק ברחבי הארץ.
             </p>
             <p>
-                החברה חרטה על דגלה שילוב מנצח בין שמירה קפדנית על הדיוק והמלודיות המקוריות של נכסי צאן ברזל מוזיקליים, לבין מעטפת הפקה מודרנית, חדשנית ועוצמתית ברמה הטכנולוגית הגבוהה ביותר. עם רזומה עשיר של הופעות על הבמות הגדולות ביותר (ביניהן תיאטרון גבעתיים ועוד), "אגם הפקות" מספקת מענה אומנותי וניהולי שלם מאל"ף ועד תי"ו.
+                החברה חרטה על דגלה שילוב מנצח בין שמירה קפדנית על הדיוק והמלודיות המקוריות של נכסי צאן ברזל מוזיקליים, לבין מעטפת הפקה מודרנית, חדשנית ועוצמתית ברמה הטכנולוגית הגבוהה ביותר. עם רזומה עשיר של הופעות על הבמות הגדולות ביותר, "אגם הפקות" מספקת מענה אומנותי וניהולי שלם מאל"ף ועד תי"ו.
             </p>
+        </div>
+
+        <!-- אזור תגובות והמלצות (חדש ומעוצב בסגנון שביקשת) -->
+        <div class="reviews-section">
+            <div class="reviews-heading">ביקורות אמיתיות מלקוחות</div>
+            <div class="reviews-stars">★★★★★</div>
+            
+            <div class="reviews-grid">
+                <!-- כרטיס המלצה 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">רוני ומשה (חתונה)</span>
+                        <span class="review-stars-individual">★★★★★</span>
+                    </div>
+                    <p class="review-text">"ישראל והצוות שלו פשוט העיפו לנו את החתונה באוויר! הרחבה הייתה מלאה עד 3 בלילה. מקצועיות ברמה הכי גבוהה שיש, שירות מדהים ודייקנות."</p>
+                </div>
+
+                <!-- כרטיס המלצה 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">יוסי לוי (אירוע חברה)</span>
+                        <span class="review-stars-individual">★★★★★</span>
+                    </div>
+                    <p class="review-text">"הפקנו דרך אגם הפקות ערב חברה חגיגי. הסאונד, התאורה, הניהול של ישראל מאחורי הקלעים – הכל תיקתק כמו שעון שוויצרי. מומלץ בחום!"</p>
+                </div>
+
+                <!-- כרטיס המלצה 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">מיכל דהן (בר מצווה)</span>
+                        <span class="review-stars-individual">★★★★★</span>
+                    </div>
+                    <p class="review-text">"תודה ענקית על אירוע בר מצווה מושלם. ישראל נתן ביצועים מרגשים בטירוף על הבמה, וכל האורחים לא הפסיקו לשאול מי הפיק את הערב הזה."</p>
+                </div>
+            </div>
+
+            <!-- כפתור המזמין להוסיף תגובה בוואטסאפ -->
+            <a href="https://wa.me/972529453046?text=היי%20מורן,%20אשמח%20להוסיף%20המלצה%20חמה%20על%20האירוע%20שלנו!" target="_blank" class="add-review-btn">לחצו כאן להוספת המלצה משלכם ✨</a>
         </div>
 
     </div>
